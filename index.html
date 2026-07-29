@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<div class="container">
+
+    <header>
+
+        <h1>💰 Expense Tracker</h1>
+
+        <p>
+            Track every expense.
+            Know where your money goes.
+        </p>
+
+    </header>
+
+    <form id="expense-form">
+
+        <input
+            id="expense-name"
+            type="text"
+            placeholder="🍔 Expense name"
+            required>
+
+        <input
+            id="expense-amount"
+            type="number"
+            placeholder="$ Amount"
+            required>
+
+        <button type="submit">
+            ➕ Add
+        </button>
+
+    </form>
+
+    <section class="summary-card">
+
+        <span>Total Balance</span>
+
+        <h2>
+            $
+            <span id="total-amount">
+                0.00
+            </span>
+        </h2>
+
+    </section>
+
+    <section class="expenses-section">
+
+        <div class="section-title">
+
+            <h3>
+                📜 Expense History
+            </h3>
+
+        </div>
+
+        <ul id="expense-list">
+
+            <!-- JS -->
+
+        </ul>
+
+    </section>
+
+</div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
