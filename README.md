@@ -1,1 +1,1 @@
-# E-class
+# expense tracker
